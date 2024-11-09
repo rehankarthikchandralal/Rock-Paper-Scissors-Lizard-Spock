@@ -28,12 +28,13 @@ def name_to_number(name):
         return 1
     elif(name == "paper"):
         return 2
-    if(name == "lizard"):
+    elif(name == "lizard"):
         return 3
     elif(name == "scissors"):
         return 4
     else:
         print("ERROR:The input is INVALID")  
+        return None
 
 
 def number_to_name(number):
@@ -41,55 +42,53 @@ def number_to_name(number):
     Given integer number (0, 1, 2, 3, or 4) is converted to 
     corresponding name 
     """
-    if(name == "rock"):
-        return 0
-    elif(name =="Spock"):
-        return 1
-    elif(name == "paper"):
-        return 2
-    if(name == "lizard"):
-        return 3
-    elif(name == "scissors"):
-        return 4
+    if(number == 0):
+        return "rock"
+    elif(number == 1):
+        return "Spock"
+    elif(number == 2):
+        return "paper"
+    elif(number == 3):
+        return "lizard"
+    elif(number == 4):
+        return "scissors"
     else:
         print("ERROR:The input is INVALID")  
-    # convert number to a name using if/elif/else
-    # don't forget to return the result!
+        return None
+
+# def rpsls(player_choice):
+#     """
+#    # Given string player_choice, play a game of RPSLS 
+#    # and print results to console
+#     """
     
-    pass
-
-
-def rpsls(player_choice):
-    """
-    Given string player_choice, play a game of RPSLS 
-    and print results to console
-    """
+#     # print a blank line to separate consecutive games
     
-    # print a blank line to separate consecutive games
+#     # print out the message for the player's choice
+
+#     # convert the player's choice to player_number using the function name_to_number()
+
+#     # compute random guess for comp_number using random.randrange()
+
+#     # convert comp_number to comp_choice using the function number_to_name()
     
-    # print out the message for the player's choice
+#     # print out message for computer's choice
 
-    # convert the player's choice to player_number using the function name_to_number()
+#     # compute difference of player_number and comp_number modulo five
 
-    # compute random guess for comp_number using random.randrange()
-
-    # convert comp_number to comp_choice using the function number_to_name()
+#     # use if/elif/else to determine winner and print winner message
     
-    # print out message for computer's choice
+#     pass
+#      `   
 
-    # compute difference of player_number and comp_number modulo five
-
-    # use if/elif/else to determine winner and print winner message
-    
-    pass
-     `   
-    
 # test your code
-rpsls("rock")
-rpsls("Spock")
-rpsls("paper")
-rpsls("lizard")
-rpsls("scissors")
+# rpsls("rock")
+# rpsls("Spock")
+# rpsls("paper")
+# rpsls("lizard")
+# rpsls("scissors")
 
 # always remember to check your completed program against the grading rubric
 
+#print(name_to_number("spock"))
+#print(number_to_name(5))
