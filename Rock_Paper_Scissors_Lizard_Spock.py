@@ -56,33 +56,37 @@ def number_to_name(number):
         print("ERROR:The input is INVALID")  
         return None
 
-# def rpsls(player_choice):
-#     """
-#    # Given string player_choice, play a game of RPSLS 
-#    # and print results to console
-#     """
+def rpsls(player_choice):
+    """
+    Given string player_choice, play a game of RPSLS 
+    and print results to console
+    """
     
-#     # print a blank line to separate consecutive games
+    print() 
     
-#     # print out the message for the player's choice
+    print("The player's choice is",player_choice)
 
-#     # convert the player's choice to player_number using the function name_to_number()
 
-#     # compute random guess for comp_number using random.randrange()
+    player_number=name_to_number(player_choice)
+    print("The player's number is",player_number)
 
-#     # convert comp_number to comp_choice using the function number_to_name()
+
+    comp_number=random.randrange(5)
+    print("The computer's number is",comp_number)
+
+    # convert comp_number to comp_choice using the function number_to_name()
     
-#     # print out message for computer's choice
+    # print out message for computer's choice
 
-#     # compute difference of player_number and comp_number modulo five
+    # compute difference of player_number and comp_number modulo five
 
-#     # use if/elif/else to determine winner and print winner message
+    # use if/elif/else to determine winner and print winner message
     
-#     pass
-#      `   
+    
+     
 
 # test your code
-# rpsls("rock")
+rpsls("rock")
 # rpsls("Spock")
 # rpsls("paper")
 # rpsls("lizard")
